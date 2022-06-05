@@ -1,0 +1,24 @@
+keyword: keyword # SINGLE word only. EX: tag, battlestars, manager, dua, notes
+app:
+  defaultLanguage: en
+  developerId: developer_id # Your ID should go here
+  commandSettings:
+    ignoreOfficialBots: true
+    ignoreUnofficialBots: false
+  messageSettings:
+    subscriptions: # Optional, All TRUE by Default
+      groupTipping: false # Prevent the bot from receiving group tip events
+      groupMessages: true # Prevent the bot from receiving group message events
+      privateMessages: true # Prevent the bot from receiving private message events    
+
+join:
+  enabled: true
+  validation:
+    members: 
+      min: 500   
+      max: 2500
+    ownerIdBlacklist: []
+
+redis:
+  host: localhost
+  port: 6379
